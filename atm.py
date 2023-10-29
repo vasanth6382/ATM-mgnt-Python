@@ -1,4 +1,3 @@
-#!/usr/bin/python
 import getpass
 import string
 import os
@@ -23,7 +22,7 @@ while True:
 		print('INVALID USERNAME')
 
 while count < 3:
-	pin = str(getpass.getpass("PLEASE ENTER PIN: ",None))
+	pin = getpass.getpass("PLEASE ENTER PIN: ")
 	if pin.isdigit():
 		if user == 'user':
 			if pin == pins[0]:
